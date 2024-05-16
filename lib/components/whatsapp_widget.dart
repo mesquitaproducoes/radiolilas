@@ -2,13 +2,9 @@ import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'whatsapp_model.dart';
 export 'whatsapp_model.dart';
 
@@ -51,8 +47,8 @@ class _WhatsappWidgetState extends State<WhatsappWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(30.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(30.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -81,15 +77,15 @@ class _WhatsappWidgetState extends State<WhatsappWidget>
         Stack(
           children: [
             Align(
-              alignment: AlignmentDirectional(0.0, 0.0),
+              alignment: const AlignmentDirectional(0.0, 0.0),
               child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 16.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 16.0),
                 child: Container(
                   width: 250.0,
                   height: 300.0,
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).secondaryBackground,
-                    boxShadow: [
+                    boxShadow: const [
                       BoxShadow(
                         blurRadius: 4.0,
                         color: Color(0x34090F13),
@@ -101,9 +97,9 @@ class _WhatsappWidgetState extends State<WhatsappWidget>
                     ],
                     borderRadius: BorderRadius.circular(12.0),
                   ),
-                  alignment: AlignmentDirectional(0.0, 0.0),
+                  alignment: const AlignmentDirectional(0.0, 0.0),
                   child: Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 4.0),
+                    padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 4.0),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       children: [
@@ -112,7 +108,7 @@ class _WhatsappWidgetState extends State<WhatsappWidget>
                           height: 140.0,
                           decoration: BoxDecoration(
                             color: FlutterFlowTheme.of(context).success,
-                            borderRadius: BorderRadius.only(
+                            borderRadius: const BorderRadius.only(
                               bottomLeft: Radius.circular(12.0),
                               bottomRight: Radius.circular(12.0),
                               topLeft: Radius.circular(12.0),
@@ -122,7 +118,7 @@ class _WhatsappWidgetState extends State<WhatsappWidget>
                           child: Stack(
                             children: [
                               Padding(
-                                padding: EdgeInsets.all(12.0),
+                                padding: const EdgeInsets.all(12.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
                                   mainAxisAlignment:
@@ -133,12 +129,12 @@ class _WhatsappWidgetState extends State<WhatsappWidget>
                                       width: 36.0,
                                       height: 36.0,
                                       decoration: BoxDecoration(
-                                        color: Color(0x98FFFFFF),
+                                        color: const Color(0x98FFFFFF),
                                         borderRadius:
                                             BorderRadius.circular(12.0),
                                       ),
-                                      alignment: AlignmentDirectional(0.0, 0.0),
-                                      child: FaIcon(
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
+                                      child: const FaIcon(
                                         FontAwesomeIcons.whatsapp,
                                         color: Colors.white,
                                         size: 20.0,
@@ -178,7 +174,7 @@ class _WhatsappWidgetState extends State<WhatsappWidget>
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0.86, -0.9),
+                                alignment: const AlignmentDirectional(0.86, -0.9),
                                 child: FlutterFlowIconButton(
                                   borderColor: Colors.transparent,
                                   borderRadius: 30.0,
@@ -198,24 +194,24 @@ class _WhatsappWidgetState extends State<WhatsappWidget>
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsets.all(12.0),
+                          padding: const EdgeInsets.all(12.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Container(
+                              SizedBox(
                                 width: 150.0,
                                 child: Stack(
-                                  alignment: AlignmentDirectional(-1.0, 0.0),
+                                  alignment: const AlignmentDirectional(-1.0, 0.0),
                                   children: [
                                     Align(
                                       alignment:
-                                          AlignmentDirectional(-0.91, 0.0),
+                                          const AlignmentDirectional(-0.91, 0.0),
                                       child: Container(
                                         width: 28.0,
                                         height: 28.0,
                                         clipBehavior: Clip.antiAlias,
-                                        decoration: BoxDecoration(
+                                        decoration: const BoxDecoration(
                                           shape: BoxShape.circle,
                                         ),
                                         child: Image.network(
@@ -226,12 +222,12 @@ class _WhatsappWidgetState extends State<WhatsappWidget>
                                     ),
                                     Align(
                                       alignment:
-                                          AlignmentDirectional(-0.62, 0.0),
+                                          const AlignmentDirectional(-0.62, 0.0),
                                       child: Container(
                                         width: 28.0,
                                         height: 28.0,
                                         clipBehavior: Clip.antiAlias,
-                                        decoration: BoxDecoration(
+                                        decoration: const BoxDecoration(
                                           shape: BoxShape.circle,
                                         ),
                                         child: Image.network(
@@ -242,12 +238,12 @@ class _WhatsappWidgetState extends State<WhatsappWidget>
                                     ),
                                     Align(
                                       alignment:
-                                          AlignmentDirectional(-0.35, 0.0),
+                                          const AlignmentDirectional(-0.35, 0.0),
                                       child: Container(
                                         width: 28.0,
                                         height: 28.0,
                                         clipBehavior: Clip.antiAlias,
-                                        decoration: BoxDecoration(
+                                        decoration: const BoxDecoration(
                                           shape: BoxShape.circle,
                                         ),
                                         child: Image.network(
@@ -258,9 +254,9 @@ class _WhatsappWidgetState extends State<WhatsappWidget>
                                     ),
                                     Align(
                                       alignment:
-                                          AlignmentDirectional(3.27, -0.17),
+                                          const AlignmentDirectional(3.27, -0.17),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 8.0, 0.0),
                                         child: Text(
                                           '100% Com Você',
@@ -277,7 +273,7 @@ class _WhatsappWidgetState extends State<WhatsappWidget>
                                   ],
                                 ),
                               ),
-                            ].divide(SizedBox(width: 8.0)),
+                            ].divide(const SizedBox(width: 8.0)),
                           ),
                         ),
                         Row(
